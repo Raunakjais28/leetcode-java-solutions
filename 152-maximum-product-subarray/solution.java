@@ -1,17 +1,25 @@
-// 277 ms | 46.8 MB
+// 2 ms | 46.5 MB
 
 class Solution {
     public int maxProduct(int[] nums) {
         int n = nums.length;
+
+        int prefix = 1;
+        int suffix = 1;
         int ans = Integer.MIN_VALUE;
 
         for (int i = 0; i < n; i++) {
-            int product = 1;
 
-            for (int j = i; j < n; j++) {
-                product *= nums[j];
-                ans = Math.max(ans, product);
-            }
+            if (prefix == 0)
+                prefix = 1;
+
+            if (suffix == 0)
+                suffix = 1;
+
+            prefix *= nums[i];
+            suffix *= nums[n - 1 - i];
+
+            ans = Math.max(ans, Math.max(prefix, suffix));
         }
 
         return ans;
