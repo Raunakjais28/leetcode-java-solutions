@@ -1,25 +1,28 @@
-// 2 ms | 46.5 MB
+// 2 ms | 46.7 MB
 
 class Solution {
     public int maxProduct(int[] nums) {
-        int n = nums.length;
 
-        int prefix = 1;
-        int suffix = 1;
-        int ans = Integer.MIN_VALUE;
+        int maxProduct = nums[0];
+        int minProduct = nums[0];
 
-        for (int i = 0; i < n; i++) {
+        int ans = nums[0];
 
-            if (prefix == 0)
-                prefix = 1;
+        for (int i = 1; i < nums.length; i++) {
 
-            if (suffix == 0)
-                suffix = 1;
+            int curr = nums[i];
 
-            prefix *= nums[i];
-            suffix *= nums[n - 1 - i];
+            if (curr < 0) {
+                int temp = maxProduct;
+                maxProduct = minProduct;
+                minProduct = temp;
+            }
 
-            ans = Math.max(ans, Math.max(prefix, suffix));
+            maxProduct = Math.max(curr, maxProduct * curr);
+
+            minProduct = Math.min(curr, minProduct * curr);
+
+            ans = Math.max(ans, maxProduct);
         }
 
         return ans;
