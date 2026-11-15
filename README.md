@@ -10,8 +10,8 @@ Solved: 9 (Easy: 2, Medium: 5, Hard: 2)
 | 152 | [Maximum Product Subarray](152-maximum-product-subarray/) | Medium | 2026-11-15 |
 | 1373 | [Maximum Sum BST in Binary Tree](1373-maximum-sum-bst-in-binary-tree/) | Hard | 2026-11-15 |
 | 200 | [Number of Islands](200-number-of-islands/) | Medium | 2026-11-15 |
+| 9 | [Palindrome Number](9-palindrome-number/) | Easy | 2026-11-15 |
 | 117 | [Populating Next Right Pointers in Each Node II](117-populating-next-right-pointers-in-each-node-ii/) | Medium | 2026-11-15 |
 | 7 | [Reverse Integer](7-reverse-integer/) | Medium | 2026-11-15 |
 | 1 | [Two Sum](1-two-sum/) | Easy | 2026-11-15 |
-| 9 | [Palindrome Number](9-palindrome-number/) | Easy | 2026-11-15 |
 <!-- LEETHUB:TABLE:END -->
