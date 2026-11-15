@@ -1,7 +1,7 @@
 # Solutions
 
 <!-- LEETHUB:TABLE:START -->
-Solved: 8 (Easy: 1, Medium: 5, Hard: 2)
+Solved: 9 (Easy: 2, Medium: 5, Hard: 2)
 
 | # | Problem | Difficulty | Solved |
 |---|---|---|---|
@@ -13,4 +13,5 @@ Solved: 8 (Easy: 1, Medium: 5, Hard: 2)
 | 117 | [Populating Next Right Pointers in Each Node II](117-populating-next-right-pointers-in-each-node-ii/) | Medium | 2026-11-15 |
 | 7 | [Reverse Integer](7-reverse-integer/) | Medium | 2026-11-15 |
 | 1 | [Two Sum](1-two-sum/) | Easy | 2026-11-15 |
+| 9 | [Palindrome Number](9-palindrome-number/) | Easy | 2026-11-15 |
 <!-- LEETHUB:TABLE:END -->
